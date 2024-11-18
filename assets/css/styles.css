@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url("../font/PlayfairDisplay-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: playfair;
+}
+
+img {
+    width: 100%;
+    /* Eviter les arrondis de taille dans les affichages
+    pouvant laisser des lignes de pixels vide */
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 6em;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 4em;
+    background-color: white;
+    z-index: 1000;
+
+    box-shadow: 1px 10px 25px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 10px 25px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 10px 25px -2px rgba(0, 0, 0, 0.75);
+}
+
+#pond {
+    width: calc(100% - 40px);
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#menu {
+    display: flex;
+}
+
+#logo {
+    width: fit-content;
+    letter-spacing: .15rem;
+    padding: 5px;
+}
+
+.bouton {
+    padding: 5px;
+}
+
+#backimg {
+    background-image: url(../img/hamburger.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    display: flex;
+    align-items: flex-end;
+
+    letter-spacing: .50rem;
+}
+
+#backimg>p {
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+#about,
+#carte,
+#contact {
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+#contact {
+    display: block;
+}
+
+/* Cumuler plusieurs elements */
+/* /!\ #about h2,h3 => #about h2 & all h3 */
+#about h2,
+#about h3 {
+    text-align: center;
+}
+
+/* Pour toutes les tailles de typo on utilise une mesure le rem 
+   1 rem <=> 16 pixels */
+#about h2 {
+    font-size: 1.2rem;
+}
+
+#about h3 {
+    font-size: .7rem;
+    letter-spacing: .1492rem;
+}
+
+#aboutimg {
+    width: 48%;
+}
+
+#abouttxt {
+    width: 48%;
+    font-size: 0.8rem;
+}
+
+.paragra {
+    color: black;
+}
+
+.paragris {
+    color: grey;
+}
+
+#about span {
+    background-color: rgb(189, 189, 189);
+}
+
+#menutxt {
+    font-size: 0.8rem;
+    width: 48%;
+}
+
+#menutxt h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#menutxt h3 {
+    font-size: .7rem;
+    letter-spacing: .1492rem;
+    margin-top: 1.5rem;
+}
+
+#menuimg {
+    width: 48%;
+}
+
+#contact span {
+    background-color: rgb(189, 189, 189);
+}
+
+#contact h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#contact p {
+    font-size: 0.8rem;
+}
+
+#contact h3 {
+    color: rgb(65, 135, 132);
+}
+
+/* precedence des champs => # puis .  puis balise*/
+#contact input {
+    box-sizing: border-box;
+    /* Corrige les decalage de padding */
+    width: 100%;
+
+    /* margin: top bottom left right */
+    margin: 10px 0;
+    border: none;
+    border-bottom: .1px solid lightgray;
+}
+
+/*
+#contact input[type="submit"] {
+    width: fit-content;
+    border: none;
+}
+*/
+
+#contact .send {
+    width: fit-content;
+}
+
+#footer {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    height: 10vh;
+}
+
+#backimg {
+    background-size: 100%;
+}
+
+/* For mobile phones */
+
+#about,
+#carte {
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+#aboutimg,
+#abouttxt,
+#menutxt,
+#menuimg {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+
+    /* For tablets */
+    #about,
+    #carte {
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    #aboutimg,
+    #abouttxt,
+    #menutxt,
+    #menuimg {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    /* For desktops */
+
+    #about,
+    #carte {
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    #aboutimg,
+    #abouttxt,
+    #menutxt,
+    #menuimg {
+        width: 49%;
+    }
+}
