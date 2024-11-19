@@ -1,2 +1,0 @@
-- le menu doit rester fixé en haut de page durant toute la navigation ( y compris pendant le scroll)
-- utilisez la font fournie dans le dossier font (Playfair_Display) et trouver comment l'importer dans votre css vous-même.
