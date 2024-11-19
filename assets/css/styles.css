@@ -55,12 +55,12 @@ header {
 #logo {
     font-size: .8em;
     width: fit-content;
-    letter-spacing: .15rem;
-    padding: 5px;
+    letter-spacing: .1rem;
+    padding: 2px;
 }
 
 .bouton {
-    padding: 5px;
+    padding: 2px;
 }
 
 #backimg {
@@ -231,12 +231,18 @@ header {
         padding: 0 20px;
     }
 
+    .bouton {
+        padding: 5px;
+    }
+
     a {
         font-size: 1em;
     }
 
     #logo {
         font-size: 1em;
+        letter-spacing: .15rem;
+        padding: 5px;
     }
 
     #backimg {
@@ -279,12 +285,18 @@ header {
         padding: 0 20px;
     }
 
+    .bouton {
+        padding: 8px;
+    }
+
     a {
         font-size: 1em;
     }
 
     #logo {
         font-size: 1em;
+        letter-spacing: .20rem;
+        padding: 8px;
     }
 
     #backimg {
