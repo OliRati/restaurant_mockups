@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url("../font/PlayfairDisplay-Regular.ttf");
+}
+
 body {
     margin: 0;
     font-family: playfair;
@@ -8,11 +13,6 @@ img {
     /* Eviter les arrondis de taille dans les affichages
     pouvant laisser des lignes de pixels vide */
     vertical-align: bottom;
-}
-
-@font-face {
-    font-family: 'Playfair';
-    src: url("../font/PlayfairDisplay-Regular.ttf");
 }
 
 a {
@@ -255,6 +255,23 @@ header {
         font-weight: 800;
     }
 
+    #about h2,
+    #carte h2,
+    #contact h2 {
+        font-size: 1.2rem;
+    }
+    
+    #contact p {
+        font-size: 1rem;
+    }
+
+    #about h3,
+    #carte h3,
+    #contact h3 {
+        font-size: 0.6rem;
+        letter-spacing: .1492rem;
+    }
+
     #about,
     #carte {
         flex-wrap: wrap;
@@ -269,7 +286,12 @@ header {
     #abouttxt,
     #menutxt,
     #menuimg {
+        font-size: 1em;
         width: 100%;
+    }
+
+    #contact input {
+        font-size: 1rem;
     }
 }
 
@@ -309,6 +331,20 @@ header {
         font-weight: 600;
     }
 
+    #about h2,
+    #carte h2,
+    #contact h2 {
+        font-size: 1.6rem;
+    }
+    
+    #contact p,
+    #about h3,
+    #carte h3,
+    #contact h3 {
+        font-size: 0.8rem;
+        letter-spacing: .1492rem;
+    }
+
     #about,
     #carte {
         display: flex;
@@ -324,6 +360,86 @@ header {
     #abouttxt,
     #menutxt,
     #menuimg {
+        font-size: 0.8em;
         width: 49%;
+    }
+
+    #contact input {
+        font-size: 0.8rem;
+    }
+}
+
+/* For desktops */
+@media screen and (min-width:1280px) {
+
+    header {
+        height: 4em;
+    }
+
+    #pond {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+
+    .bouton {
+        padding: 8px;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    #logo {
+        font-size: 1em;
+        letter-spacing: .20rem;
+        padding: 8px;
+    }
+
+    #backimg {
+        height: 65vw;
+        margin-top: 4em;
+    }
+
+    #backimg>p {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    #about h2,
+    #carte h2,
+    #contact h2 {
+        font-size: 1.8rem;
+    }
+    
+    #contact p,
+    #about h3,
+    #carte h3,
+    #contact h3 {
+        font-size: 1rem;
+        letter-spacing: .1492rem;
+    }
+    
+    #about,
+    #carte {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 70vw;
+    }
+
+    #contact {
+        font-size: 1.2em;
+        width: 70vw;
+    }
+
+    #aboutimg,
+    #abouttxt,
+    #menutxt,
+    #menuimg {
+        font-size: 1.2em;
+        width: 49%;
+    }
+
+    #contact input {
+        font-size: 1rem;
     }
 }
