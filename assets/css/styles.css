@@ -20,12 +20,6 @@ a {
     text-decoration: none;
 }
 
-:target::before {
-    content: "";
-    display: block;
-    height: 6em;
-}
-
 header {
     position: fixed;
     top: 0;
@@ -37,6 +31,18 @@ header {
     box-shadow: 1px 10px 25px -2px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 10px 25px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 10px 25px -2px rgba(0, 0, 0, 0.75);
+}
+
+.spacer {
+    width: 100vw;
+    height: 3em;
+}
+
+.anchor-section {
+    padding-top: 3em;
+    /* Adjust based on your header height + some extra space */
+    margin-top: -3em;
+    /* Same value as padding-top */
 }
 
 #pond {
@@ -65,7 +71,6 @@ header {
 
 #backimg {
     position: relative;
-    margin-top: 3em;
     background-image: url(../img/hamburger.jpg);
     background-size: cover;
     background-position: top center;
@@ -245,9 +250,17 @@ header {
         padding: 5px;
     }
 
+    .spacer {
+        height: 4em;
+    }
+
+    .anchor-section {
+        padding-top: 4em;
+        margin-top: -4em;
+    }
+    
     #backimg {
         height: 50vw;
-        margin-top: 4em;
     }
 
     #backimg>p {
@@ -260,7 +273,7 @@ header {
     #contact h2 {
         font-size: 1.2rem;
     }
-    
+
     #contact p {
         font-size: 1rem;
     }
@@ -321,9 +334,17 @@ header {
         padding: 8px;
     }
 
+    .spacer {
+        height: 4em;
+    }
+
+    .anchor-section {
+        padding-top: 4em;
+        margin-top: -4em;
+    }
+
     #backimg {
         height: 65vw;
-        margin-top: 4em;
     }
 
     #backimg>p {
@@ -336,7 +357,7 @@ header {
     #contact h2 {
         font-size: 1.6rem;
     }
-    
+
     #contact p,
     #about h3,
     #carte h3,
@@ -395,9 +416,17 @@ header {
         padding: 8px;
     }
 
+    .spacer {
+        height: 4em;
+    }
+
+    .anchor-section {
+        padding-top: 4em;
+        margin-top: -4em;
+    }
+
     #backimg {
         height: 65vw;
-        margin-top: 4em;
     }
 
     #backimg>p {
@@ -410,7 +439,7 @@ header {
     #contact h2 {
         font-size: 1.8rem;
     }
-    
+
     #contact p,
     #about h3,
     #carte h3,
@@ -418,7 +447,7 @@ header {
         font-size: 1rem;
         letter-spacing: .1492rem;
     }
-    
+
     #about,
     #carte {
         display: flex;
